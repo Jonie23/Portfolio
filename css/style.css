@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+header {
+  background-color:  rgb(65, 126, 126);
+
+  margin: 0;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#navbar ul li {
+
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 0.25em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+
+#welcome-section {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  height:100vh;
+  color: rgb(65, 126, 126);
+  margin-top: 10rem;
+}
+
+#welcome-section > h1 {
+  font-size: 3em;
+ 
+}
+
+#welcome-section > p {
+  font-size: 1em;
+ 
+}
+
+#skills {
+  text-align: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#projects {
+ text-align: center;
+ margin: 3rem 0;
+}
+
+#projects h3 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+.projects-tile{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  cursor: pointer;
+}
+
+
+
+.project-tile {
+   
+   background-color: aqua;
+   margin: 30px auto;
+   border-radius: 10px;
+}
+
+.project-tile img{
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#projects a{
+  text-decoration: none;
+  padding: 15px 5px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(65, 126, 126);
+}
+#projects a:hover{
+  text-decoration: underline;
+}
+
+#footer {
+  background-color: rgb(0, 0, 0);
+  color:   rgb(255, 255, 255);
+  padding: 20px;
+}
+
+#footer > p:first-child {
+  text-align: center;
+  font-size: 3em;
+  margin: 0 10px;
+
+}
+
+#footer > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#footer > ul > li {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+ 
+}
+
+#footer > ul > li > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  
+}
+
+#footer > hr{
+  height: 2px;
+}
+
+#footer > p:last-child{
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This picks up for bigger screens */
+@media (min-width: 576px) {
+  
+  header{
+    margin: 0;
+    padding: 5px;
+  }
+
+
+  #navbar {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  #navbar ul{
+     flex-direction: row;
+   
+  }
+
+  #navbar ul li {
+    margin: 0 5px;
+    border-radius: 10px;
+   
+  }
+
+
+  #welcome-section > h1 {
+    font-size: 5em;
+  }
+
+  #welcome-section > p {
+    font-size: 2em;
+  }
+
+  #skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .projects-tile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+ 
+
+
+ 
+
+
+  #footer > ul {
+   padding: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
+  }
+
+  #footer > hr {
+    height: 2px;
+  }
+
+  #footer > p:last-child{
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+@media all  and (min-width:992px){
+  .projects-tile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
