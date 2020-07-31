@@ -8,8 +8,9 @@ You can find the link to the webpage here https://jonie23.github.io/Portfolio/
 * Html
 * CSS
 * Javascript (ES6)
-* React
 * Python (Flask Microframework)
 * MongoDB
+* SQL
+* Iam currently learning React and Express(Node)
 
 
